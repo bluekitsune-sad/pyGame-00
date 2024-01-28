@@ -7,15 +7,15 @@ win = pygame.display.set_mode((500, 500))
 pygame.display.set_caption(" FirstGame ")
 
 # we can also make one by fliping a side to make the other side
-walkRight = [pygame.image.load('R1.png'), pygame.image.load('R2.png'), pygame.image.load('R3.png'),
-             pygame.image.load('R4.png'), pygame.image.load('R5.png'), pygame.image.load('R6.png'),
-             pygame.image.load('R7.png'), pygame.image.load('R8.png'), pygame.image.load('R9.png')]
-walkLeft = [pygame.image.load('L1.png'), pygame.image.load('L2.png'), pygame.image.load('L3.png'),
-            pygame.image.load('L4.png'), pygame.image.load('L5.png'), pygame.image.load('L6.png'),
-            pygame.image.load('L7.png'), pygame.image.load('L8.png'), pygame.image.load('L9.png')]
-bg = pygame.image.load('bg.jpg')
+walkRight = [pygame.image.load('art/R1.png'), pygame.image.load('art/R2.png'), pygame.image.load('art/R3.png'),
+             pygame.image.load('art/R4.png'), pygame.image.load('art/R5.png'), pygame.image.load('art/R6.png'),
+             pygame.image.load('art/R7.png'), pygame.image.load('art/R8.png'), pygame.image.load('art/R9.png')]
+walkLeft = [pygame.image.load('art/L1.png'), pygame.image.load('art/L2.png'), pygame.image.load('art/L3.png'),
+            pygame.image.load('art/L4.png'), pygame.image.load('art/L5.png'), pygame.image.load('art/L6.png'),
+            pygame.image.load('art/L7.png'), pygame.image.load('art/L8.png'), pygame.image.load('art/L9.png')]
+bg = pygame.image.load('art/bg.jpg')
 # bgfrompath = pygame.image.load('../../New folder/Gmae/bg.jpg')
-char = pygame.image.load('standing.png')
+char = pygame.image.load('art/standing.png')
 
 screenWidth = 500
 
