@@ -56,7 +56,7 @@ class player(object):
                 win.blit(walkLeft[0], (self.x, self.y))
 
         self.hitbox = (self.x + 17, self.y + 11, 29, 52)
-        pygame.draw.rect(win, (255,0,0), self.hitbox, 2)
+        pygame.draw.rect(win, (255, 0, 0), self.hitbox, 2)
 
 
 class projectile(object):
@@ -124,6 +124,9 @@ class enemy(object):
                 self.x += self.vel
                 self.walkCount = 0
 
+    def hit(self):
+        print("I am hurt")
+
 
 def redrawGameWindow():
     win.blit(bg, (0, 0))
@@ -150,6 +153,11 @@ while run:
             run = False
 
     for bullet in bullets:
+        if bullet.y - bullet.radius < goblin.hitbox[1] + goblin.hitbox[3] and bullet.y + bullet.radius > goblin.hitbox[1]:
+            if bullet.x + bullet.radius > goblin.hitbox[0] and bullet.x - bullet.radius < goblin.hitbox[0] + goblin.hitbox[2]:
+                goblin.hit()
+                bullets.pop(bullets.index(bullet))
+
         # if bullet.x < 500 and bullet.x > 0:
         if 500 > bullet.x > 0:
             bullet.x += bullet.vel
