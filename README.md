@@ -52,7 +52,7 @@ Personalize your gaming experience by modifying images and sounds in the `art` f
 
 ## Contact Me
 
-If you have any questions or suggestions, feel free to contact me at [Email](mailto:saadshaan619@gmail.com) .
+- If you have any questions or suggestions, feel free to contact me at [Email](mailto:saadshaan619@gmail.com) .
 ---
 
 Enjoy the game and happy coding! 🎮💻
