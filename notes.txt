@@ -1,2 +1,3 @@
 while loading images use .convert() like    img = pygame.img.load('path').convert()
 use dict more
+pymunk for phyics
