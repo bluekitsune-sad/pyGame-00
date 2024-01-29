@@ -17,6 +17,12 @@ bg = pygame.image.load('art/bg.jpg')
 # bgfrompath = pygame.image.load('../../New folder/Gmae/bg.jpg')
 char = pygame.image.load('art/standing.png')
 
+bulletSound = pygame.mixer.Sound('art/bullet.mp3')
+hitSound = pygame.mixer.Sound('art/hit.mp3')
+
+music = pygame.mixer.music.load('art/music.mp3')
+pygame.mixer.music.play(-1)
+
 screenWidth = 500
 
 clock = pygame.time.Clock()
@@ -180,6 +186,7 @@ while run:
         if bullet.y - bullet.radius < goblin.hitbox[1] + goblin.hitbox[3] and bullet.y + bullet.radius > goblin.hitbox[1]:
             if bullet.x + bullet.radius > goblin.hitbox[0] and bullet.x - bullet.radius < goblin.hitbox[0] + goblin.hitbox[2]:
                 goblin.hit()
+                hitSound.play()
                 score += 1
                 bullets.pop(bullets.index(bullet))
 
@@ -192,6 +199,7 @@ while run:
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_SPACE] and shootLoop == 0:
+        bulletSound.play()
         if man.left:
             facing = -1
         else:
