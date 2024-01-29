@@ -50,6 +50,9 @@ Personalize your gaming experience by modifying images and sounds in the `art` f
 - Game development powered by [Pygame](https://www.pygame.org/news).
 - Game development powered by [@TechWithTim](https://www.youtube.com/@TechWithTim/videos).
 
+## Contact Me
+
+If you have any questions or suggestions, feel free to contact me at [Email](mailto:saadshaan619@gmail.com) .
 ---
 
 Enjoy the game and happy coding! 🎮💻
